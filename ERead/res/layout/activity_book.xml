@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<FrameLayout android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <cn.dengzhiguo.eread.widget.EBook 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:id="@+id/ebook"/>
+	    <RelativeLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/layoutTranslate"
+	        android:background="#ffffffff"
+	        android:padding="5dp"
+	        android:visibility="gone">
+	        <LinearLayout android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:id="@+id/layoutTitle">
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	                android:id="@+id/txtWord"
+	                android:textColor="#ff000000"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	                android:id="@+id/txtPhen"
+	                android:textColor="#ff000000"
+	                android:paddingLeft="5dp"/>
+	            <ImageView android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:src="@drawable/speaker"
+	                android:id="@+id/imgVoiceEn"/>
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	                android:id="@+id/txtPham"
+	                android:textColor="#ff000000"
+	                android:paddingLeft="5dp"/>
+	             <ImageView android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:src="@drawable/speaker"
+	                android:id="@+id/imgVoiceAm"/>
+	        </LinearLayout>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	                android:id="@+id/txtParts"
+	                android:layout_below="@id/layoutTitle"
+	                android:textColor="#ff000000"/>
+	    </RelativeLayout>
+	</FrameLayout>
+</LinearLayout>
