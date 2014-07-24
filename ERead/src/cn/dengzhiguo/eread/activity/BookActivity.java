@@ -13,6 +13,8 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
+import com.umeng.analytics.MobclickAgent;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -24,6 +26,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import cn.dengzhiguo.eread.R;
+import cn.dengzhiguo.eread.activity.actions.ListBookAction_;
 import cn.dengzhiguo.eread.activity.actions.PlayVoiceAction_;
 import cn.dengzhiguo.eread.activity.actions.SaveBookAction_;
 import cn.dengzhiguo.eread.activity.actions.TranslateAction_;
@@ -174,5 +177,14 @@ public class BookActivity extends Activity {
 		}
 		txtParts.setText(rlt.toString());
 	}
-	
+	@Override
+	protected void onResume() {
+		
+		super.onResume();
+		MobclickAgent.onResume(this);
+	}
+	public void onPause() {
+		super.onPause();
+		MobclickAgent.onPause(this);
+	}
 }

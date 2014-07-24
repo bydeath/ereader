@@ -1253,3 +1253,279 @@ Element (VariableElementImpl): bookListAdpater
 23:12:13.657 [Worker-28] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
 23:16:56.993 [Worker-32] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
 23:17:21.812 [Worker-22] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:18:08.19 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:18:08.20 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 13 annotations on 30 elements
+23:18:08.47 [ModalContext] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder /Users/zhiguodeng/git/eread/ERead: /Users/zhiguodeng/git/eread/ERead/AndroidManifest.xml
+23:18:08.49 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=cn.dengzhiguo.eread, componentQualifiedNames=[cn.dengzhiguo.eread.activity.BookActivity_, cn.dengzhiguo.eread.activity.MainActivity_, com.umeng.update.UpdateDialogActivity, com.umeng.update.net.DownloadingService], permissionQualifiedNames=[android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.READ_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.INTERNET, android.permission.READ_LOGS, android.permission.CALL_PHONE], applicationClassName=cn.dengzhiguo.eread.MainApp, libraryProject=false, debugabble=false, minSdkVersion=12, maxSdkVersion=-1, targetSdkVersion=21]
+23:18:08.50 [ModalContext] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: cn.dengzhiguo.eread.R
+23:18:08.51 [ModalContext] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+23:18:08.60 [ModalContext] INFO  o.a.p.ModelValidator:42 - Validating elements
+23:18:08.61 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EActivityHandler: [cn.dengzhiguo.eread.activity.BookActivity, cn.dengzhiguo.eread.activity.MainActivity]
+23:18:08.62 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EBeanHandler: [cn.dengzhiguo.eread.activity.actions.PlayVoiceAction, cn.dengzhiguo.eread.net.DictNetHandler, cn.dengzhiguo.eread.adapter.BookListAdapter, cn.dengzhiguo.eread.activity.actions.SaveBookAction, cn.dengzhiguo.eread.activity.actions.ListBookAction, cn.dengzhiguo.eread.bo.FileUtil, cn.dengzhiguo.eread.activity.actions.InitAction, cn.dengzhiguo.eread.activity.actions.TranslateAction, cn.dengzhiguo.eread.bo.BookImpl]
+23:18:08.62 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EViewGroupHandler: [cn.dengzhiguo.eread.view.BookView]
+23:18:08.63 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ViewByIdHandler: [listBook, txtWord, layoutTrans, txtPhen, imgPlayen, txtTitle, ebook, imgPlayam, txtPham, txtPage, txtParts]
+23:18:08.65 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ClickHandler: [public void clickVoiceEn() , public void bookClick() , public void clickVoiceAm() ]
+23:18:08.66 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ItemClickHandler: [public void openBook(java.lang.Object) ]
+23:18:08.67 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RestHandler: [cn.dengzhiguo.eread.net.DictClient]
+23:18:08.68 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with GetHandler: [public abstract cn.dengzhiguo.eread.modal.TranslateInfo getTranslate(java.lang.String) ]
+23:18:08.68 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RestServiceHandler: [dictClient]
+23:18:08.68 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with OrmLiteDaoHandler: [bookDao]
+23:18:08.69 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RootContextHanlder: [context, context, context]
+23:18:08.70 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with BeanHandler: [bookListAdpater, fileUtil, book, book, dictHandler, bookBo, bookBo, fileUtil]
+23:18:08.70 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with AfterViewsHandler: [public void init() , public void afterView() ]
+23:18:08.71 [ModalContext] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+23:18:08.71 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EActivityHandler: [cn.dengzhiguo.eread.activity.BookActivity, cn.dengzhiguo.eread.activity.MainActivity]
+23:18:08.73 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EBeanHandler: [cn.dengzhiguo.eread.activity.actions.PlayVoiceAction, cn.dengzhiguo.eread.adapter.BookListAdapter, cn.dengzhiguo.eread.net.DictNetHandler, cn.dengzhiguo.eread.activity.actions.ListBookAction, cn.dengzhiguo.eread.activity.actions.SaveBookAction, cn.dengzhiguo.eread.bo.FileUtil, cn.dengzhiguo.eread.activity.actions.InitAction, cn.dengzhiguo.eread.activity.actions.TranslateAction, cn.dengzhiguo.eread.bo.BookImpl]
+23:18:08.75 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EViewGroupHandler: [cn.dengzhiguo.eread.view.BookView]
+23:18:08.75 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements RestHandler: [cn.dengzhiguo.eread.net.DictClient]
+23:18:08.76 [ModalContext] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+23:18:08.78 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 13
+23:18:08.78 [ModalContext] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+23:18:08.78 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.InitAction_
+23:18:08.83 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.ListBookAction_
+23:18:08.84 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.PlayVoiceAction_
+23:18:08.86 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.SaveBookAction_
+23:18:08.88 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.TranslateAction_
+23:18:08.89 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.view.BookView_
+23:18:08.92 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.bo.BookImpl_
+23:18:08.94 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.bo.FileUtil_
+23:18:08.95 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.net.DictClient_
+23:18:08.97 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.net.DictNetHandler_
+23:18:08.98 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.adapter.BookListAdapter_
+23:18:08.99 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.BookActivity_
+23:18:08.102 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.MainActivity_
+23:18:08.105 [ModalContext] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 85 ms], [Generate Sources = 27 ms], [Extract Annotations = 26 ms], [Validate Annotations = 11 ms], [Find R Classes = 10 ms], [Process Annotations = 7 ms], [Extract Manifest = 3 ms], 
+23:18:08.105 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+23:18:08.429 [Worker-22] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:18:10.114 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:18:10.116 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 13 annotations on 30 elements
+23:18:10.129 [ModalContext] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder /Users/zhiguodeng/git/eread/ERead: /Users/zhiguodeng/git/eread/ERead/AndroidManifest.xml
+23:18:10.131 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=cn.dengzhiguo.eread, componentQualifiedNames=[cn.dengzhiguo.eread.activity.BookActivity_, cn.dengzhiguo.eread.activity.MainActivity_, com.umeng.update.UpdateDialogActivity, com.umeng.update.net.DownloadingService], permissionQualifiedNames=[android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.READ_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.INTERNET, android.permission.READ_LOGS, android.permission.CALL_PHONE], applicationClassName=cn.dengzhiguo.eread.MainApp, libraryProject=false, debugabble=false, minSdkVersion=12, maxSdkVersion=-1, targetSdkVersion=21]
+23:18:10.131 [ModalContext] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: cn.dengzhiguo.eread.R
+23:18:10.132 [ModalContext] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+23:18:10.136 [ModalContext] INFO  o.a.p.ModelValidator:42 - Validating elements
+23:18:10.136 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EActivityHandler: [cn.dengzhiguo.eread.activity.BookActivity, cn.dengzhiguo.eread.activity.MainActivity]
+23:18:10.136 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EBeanHandler: [cn.dengzhiguo.eread.activity.actions.PlayVoiceAction, cn.dengzhiguo.eread.net.DictNetHandler, cn.dengzhiguo.eread.adapter.BookListAdapter, cn.dengzhiguo.eread.activity.actions.SaveBookAction, cn.dengzhiguo.eread.activity.actions.ListBookAction, cn.dengzhiguo.eread.bo.FileUtil, cn.dengzhiguo.eread.activity.actions.InitAction, cn.dengzhiguo.eread.activity.actions.TranslateAction, cn.dengzhiguo.eread.bo.BookImpl]
+23:18:10.137 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EViewGroupHandler: [cn.dengzhiguo.eread.view.BookView]
+23:18:10.137 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ViewByIdHandler: [txtWord, txtTitle, ebook, txtParts, listBook, txtPhen, layoutTrans, txtPham, txtPage, imgPlayam, imgPlayen]
+23:18:10.139 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ClickHandler: [public void clickVoiceEn() , public void clickVoiceAm() , public void bookClick() ]
+23:18:10.140 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ItemClickHandler: [public void openBook(java.lang.Object) ]
+23:18:10.140 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RestHandler: [cn.dengzhiguo.eread.net.DictClient]
+23:18:10.141 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with GetHandler: [public abstract cn.dengzhiguo.eread.modal.TranslateInfo getTranslate(java.lang.String) ]
+23:18:10.141 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RestServiceHandler: [dictClient]
+23:18:10.142 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with OrmLiteDaoHandler: [bookDao]
+23:18:10.142 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RootContextHanlder: [context, context, context]
+23:18:10.143 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with BeanHandler: [bookBo, bookBo, fileUtil, book, bookListAdpater, fileUtil, book, dictHandler]
+23:18:10.143 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with AfterViewsHandler: [public void afterView() , public void init() ]
+23:18:10.144 [ModalContext] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+23:18:10.144 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EActivityHandler: [cn.dengzhiguo.eread.activity.BookActivity, cn.dengzhiguo.eread.activity.MainActivity]
+23:18:10.147 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EBeanHandler: [cn.dengzhiguo.eread.activity.actions.PlayVoiceAction, cn.dengzhiguo.eread.adapter.BookListAdapter, cn.dengzhiguo.eread.net.DictNetHandler, cn.dengzhiguo.eread.activity.actions.ListBookAction, cn.dengzhiguo.eread.activity.actions.SaveBookAction, cn.dengzhiguo.eread.bo.FileUtil, cn.dengzhiguo.eread.activity.actions.InitAction, cn.dengzhiguo.eread.activity.actions.TranslateAction, cn.dengzhiguo.eread.bo.BookImpl]
+23:18:10.148 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EViewGroupHandler: [cn.dengzhiguo.eread.view.BookView]
+23:18:10.148 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements RestHandler: [cn.dengzhiguo.eread.net.DictClient]
+23:18:10.148 [ModalContext] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+23:18:10.151 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 13
+23:18:10.151 [ModalContext] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+23:18:10.151 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.InitAction_
+23:18:10.155 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.ListBookAction_
+23:18:10.156 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.PlayVoiceAction_
+23:18:10.158 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.SaveBookAction_
+23:18:10.159 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.TranslateAction_
+23:18:10.160 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.view.BookView_
+23:18:10.162 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.bo.BookImpl_
+23:18:10.164 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.bo.FileUtil_
+23:18:10.165 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.net.DictClient_
+23:18:10.166 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.net.DictNetHandler_
+23:18:10.168 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.adapter.BookListAdapter_
+23:18:10.169 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.BookActivity_
+23:18:10.172 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.MainActivity_
+23:18:10.174 [ModalContext] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 58 ms], [Generate Sources = 23 ms], [Extract Annotations = 13 ms], [Validate Annotations = 8 ms], [Process Annotations = 7 ms], [Find R Classes = 4 ms], [Extract Manifest = 2 ms], 
+23:18:10.175 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+23:19:40.720 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:19:40.723 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 5 annotations on 1 elements
+23:19:40.753 [Worker-41] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder /Users/zhiguodeng/git/eread/ERead: /Users/zhiguodeng/git/eread/ERead/AndroidManifest.xml
+23:19:40.758 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=cn.dengzhiguo.eread, componentQualifiedNames=[cn.dengzhiguo.eread.activity.BookActivity_, cn.dengzhiguo.eread.activity.MainActivity_, com.umeng.update.UpdateDialogActivity, com.umeng.update.net.DownloadingService], permissionQualifiedNames=[android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.READ_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.INTERNET, android.permission.READ_LOGS, android.permission.CALL_PHONE], applicationClassName=cn.dengzhiguo.eread.MainApp, libraryProject=false, debugabble=false, minSdkVersion=12, maxSdkVersion=-1, targetSdkVersion=21]
+23:19:40.759 [Worker-41] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: cn.dengzhiguo.eread.R
+23:19:40.761 [Worker-41] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+23:19:40.773 [Worker-41] INFO  o.a.p.ModelValidator:42 - Validating elements
+23:19:40.773 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with EActivityHandler: [cn.dengzhiguo.eread.activity.MainActivity]
+23:19:40.774 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with ViewByIdHandler: [listBook]
+23:19:40.780 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with ItemClickHandler: [public void openBook(java.lang.Object) ]
+23:19:40.781 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with BeanHandler: [bookListAdpater]
+23:19:40.781 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with AfterViewsHandler: [public void init() ]
+23:19:40.782 [Worker-41] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+23:19:40.782 [Worker-41] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EActivityHandler: [cn.dengzhiguo.eread.activity.MainActivity]
+23:19:40.784 [Worker-41] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+23:19:40.785 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 1
+23:19:40.785 [Worker-41] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+23:19:40.786 [Worker-41] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.MainActivity_
+23:19:40.789 [Worker-41] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 66 ms], [Extract Annotations = 30 ms], [Find R Classes = 14 ms], [Validate Annotations = 9 ms], [Extract Manifest = 5 ms], [Generate Sources = 4 ms], [Process Annotations = 3 ms], 
+23:19:40.789 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+23:19:44.236 [Worker-40] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:19:44.238 [Worker-40] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 5 annotations on 1 elements
+23:19:44.246 [Worker-40] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder /Users/zhiguodeng/git/eread/ERead: /Users/zhiguodeng/git/eread/ERead/AndroidManifest.xml
+23:19:44.248 [Worker-40] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=cn.dengzhiguo.eread, componentQualifiedNames=[cn.dengzhiguo.eread.activity.BookActivity_, cn.dengzhiguo.eread.activity.MainActivity_, com.umeng.update.UpdateDialogActivity, com.umeng.update.net.DownloadingService], permissionQualifiedNames=[android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.READ_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.INTERNET, android.permission.READ_LOGS, android.permission.CALL_PHONE], applicationClassName=cn.dengzhiguo.eread.MainApp, libraryProject=false, debugabble=false, minSdkVersion=12, maxSdkVersion=-1, targetSdkVersion=21]
+23:19:44.248 [Worker-40] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: cn.dengzhiguo.eread.R
+23:19:44.249 [Worker-40] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+23:19:44.253 [Worker-40] INFO  o.a.p.ModelValidator:42 - Validating elements
+23:19:44.253 [Worker-40] DEBUG o.a.p.ModelValidator:62 - Validating with EActivityHandler: [cn.dengzhiguo.eread.activity.MainActivity]
+23:19:44.253 [Worker-40] DEBUG o.a.p.ModelValidator:62 - Validating with ViewByIdHandler: [listBook]
+23:19:44.255 [Worker-40] DEBUG o.a.p.ModelValidator:62 - Validating with ItemClickHandler: [public void openBook(java.lang.Object) ]
+23:19:44.255 [Worker-40] DEBUG o.a.p.ModelValidator:62 - Validating with BeanHandler: [bookListAdpater]
+23:19:44.256 [Worker-40] DEBUG o.a.p.ModelValidator:62 - Validating with AfterViewsHandler: [public void init() ]
+23:19:44.256 [Worker-40] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+23:19:44.256 [Worker-40] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EActivityHandler: [cn.dengzhiguo.eread.activity.MainActivity]
+23:19:44.258 [Worker-40] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+23:19:44.259 [Worker-40] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 1
+23:19:44.259 [Worker-40] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+23:19:44.259 [Worker-40] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.MainActivity_
+23:19:44.261 [Worker-40] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 23 ms], [Extract Annotations = 8 ms], [Find R Classes = 5 ms], [Validate Annotations = 3 ms], [Process Annotations = 3 ms], [Extract Manifest = 2 ms], [Generate Sources = 2 ms], 
+23:19:44.262 [Worker-40] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+23:19:54.41 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:19:54.42 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 5 annotations on 1 elements
+23:19:54.71 [Worker-41] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder /Users/zhiguodeng/git/eread/ERead: /Users/zhiguodeng/git/eread/ERead/AndroidManifest.xml
+23:19:54.74 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=cn.dengzhiguo.eread, componentQualifiedNames=[cn.dengzhiguo.eread.activity.BookActivity_, cn.dengzhiguo.eread.activity.MainActivity_, com.umeng.update.UpdateDialogActivity, com.umeng.update.net.DownloadingService], permissionQualifiedNames=[android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.READ_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.INTERNET, android.permission.READ_LOGS, android.permission.CALL_PHONE], applicationClassName=cn.dengzhiguo.eread.MainApp, libraryProject=false, debugabble=false, minSdkVersion=12, maxSdkVersion=-1, targetSdkVersion=21]
+23:19:54.75 [Worker-41] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: cn.dengzhiguo.eread.R
+23:19:54.79 [Worker-41] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+23:19:54.90 [Worker-41] INFO  o.a.p.ModelValidator:42 - Validating elements
+23:19:54.90 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with EActivityHandler: [cn.dengzhiguo.eread.activity.MainActivity]
+23:19:54.91 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with ViewByIdHandler: [listBook]
+23:19:54.97 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with ItemClickHandler: [public void openBook(java.lang.Object) ]
+23:19:54.97 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with BeanHandler: [bookListAdpater]
+23:19:54.98 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with AfterViewsHandler: [public void init() ]
+23:19:54.98 [Worker-41] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+23:19:54.99 [Worker-41] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EActivityHandler: [cn.dengzhiguo.eread.activity.MainActivity]
+23:19:54.101 [Worker-41] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+23:19:54.101 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 1
+23:19:54.101 [Worker-41] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+23:19:54.102 [Worker-41] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.MainActivity_
+23:19:54.104 [Worker-41] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 62 ms], [Extract Annotations = 29 ms], [Find R Classes = 15 ms], [Validate Annotations = 8 ms], [Extract Manifest = 3 ms], [Process Annotations = 3 ms], [Generate Sources = 3 ms], 
+23:19:54.105 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+23:20:01.271 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:20:01.272 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 5 annotations on 1 elements
+23:20:01.277 [Worker-41] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder /Users/zhiguodeng/git/eread/ERead: /Users/zhiguodeng/git/eread/ERead/AndroidManifest.xml
+23:20:01.280 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=cn.dengzhiguo.eread, componentQualifiedNames=[cn.dengzhiguo.eread.activity.BookActivity_, cn.dengzhiguo.eread.activity.MainActivity_, com.umeng.update.UpdateDialogActivity, com.umeng.update.net.DownloadingService], permissionQualifiedNames=[android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.READ_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.INTERNET, android.permission.READ_LOGS, android.permission.CALL_PHONE], applicationClassName=cn.dengzhiguo.eread.MainApp, libraryProject=false, debugabble=false, minSdkVersion=12, maxSdkVersion=-1, targetSdkVersion=21]
+23:20:01.281 [Worker-41] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: cn.dengzhiguo.eread.R
+23:20:01.283 [Worker-41] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+23:20:01.286 [Worker-41] INFO  o.a.p.ModelValidator:42 - Validating elements
+23:20:01.286 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with EActivityHandler: [cn.dengzhiguo.eread.activity.MainActivity]
+23:20:01.286 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with ViewByIdHandler: [listBook]
+23:20:01.287 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with ItemClickHandler: [public void openBook(java.lang.Object) ]
+23:20:01.290 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with BeanHandler: [bookListAdpater]
+23:20:01.291 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with AfterViewsHandler: [public void init() ]
+23:20:01.291 [Worker-41] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+23:20:01.291 [Worker-41] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EActivityHandler: [cn.dengzhiguo.eread.activity.MainActivity]
+23:20:01.293 [Worker-41] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+23:20:01.293 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 1
+23:20:01.293 [Worker-41] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+23:20:01.294 [Worker-41] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.MainActivity_
+23:20:01.295 [Worker-41] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 23 ms], [Extract Annotations = 5 ms], [Find R Classes = 5 ms], [Validate Annotations = 5 ms], [Extract Manifest = 3 ms], [Process Annotations = 2 ms], [Generate Sources = 2 ms], 
+23:20:01.296 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+23:20:08.649 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:20:08.650 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 5 annotations on 1 elements
+23:20:08.663 [Worker-41] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder /Users/zhiguodeng/git/eread/ERead: /Users/zhiguodeng/git/eread/ERead/AndroidManifest.xml
+23:20:08.665 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=cn.dengzhiguo.eread, componentQualifiedNames=[cn.dengzhiguo.eread.activity.BookActivity_, cn.dengzhiguo.eread.activity.MainActivity_, com.umeng.update.UpdateDialogActivity, com.umeng.update.net.DownloadingService], permissionQualifiedNames=[android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.READ_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.INTERNET, android.permission.READ_LOGS, android.permission.CALL_PHONE], applicationClassName=cn.dengzhiguo.eread.MainApp, libraryProject=false, debugabble=false, minSdkVersion=12, maxSdkVersion=-1, targetSdkVersion=21]
+23:20:08.665 [Worker-41] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: cn.dengzhiguo.eread.R
+23:20:08.666 [Worker-41] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+23:20:08.670 [Worker-41] INFO  o.a.p.ModelValidator:42 - Validating elements
+23:20:08.671 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with EActivityHandler: [cn.dengzhiguo.eread.activity.BookActivity]
+23:20:08.671 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with ViewByIdHandler: [txtWord, txtPhen, imgPlayen, txtPham, layoutTrans, txtParts, imgPlayam, ebook]
+23:20:08.673 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with ClickHandler: [public void clickVoiceAm() , public void bookClick() , public void clickVoiceEn() ]
+23:20:08.674 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with BeanHandler: [bookBo, fileUtil]
+23:20:08.674 [Worker-41] DEBUG o.a.p.ModelValidator:62 - Validating with AfterViewsHandler: [public void afterView() ]
+23:20:08.675 [Worker-41] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+23:20:08.675 [Worker-41] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EActivityHandler: [cn.dengzhiguo.eread.activity.BookActivity]
+23:20:08.676 [Worker-41] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+23:20:08.677 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 1
+23:20:08.677 [Worker-41] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+23:20:08.678 [Worker-41] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.BookActivity_
+23:20:08.684 [Worker-41] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 34 ms], [Extract Annotations = 12 ms], [Generate Sources = 7 ms], [Find R Classes = 5 ms], [Validate Annotations = 5 ms], [Extract Manifest = 3 ms], [Process Annotations = 2 ms], 
+23:20:08.684 [Worker-41] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+23:20:21.713 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:20:21.714 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 13 annotations on 30 elements
+23:20:21.734 [ModalContext] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder /Users/zhiguodeng/git/eread/ERead: /Users/zhiguodeng/git/eread/ERead/AndroidManifest.xml
+23:20:21.736 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=cn.dengzhiguo.eread, componentQualifiedNames=[cn.dengzhiguo.eread.activity.BookActivity_, cn.dengzhiguo.eread.activity.MainActivity_, com.umeng.update.UpdateDialogActivity, com.umeng.update.net.DownloadingService], permissionQualifiedNames=[android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.READ_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.INTERNET, android.permission.READ_LOGS, android.permission.CALL_PHONE], applicationClassName=cn.dengzhiguo.eread.MainApp, libraryProject=false, debugabble=false, minSdkVersion=12, maxSdkVersion=-1, targetSdkVersion=21]
+23:20:21.736 [ModalContext] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: cn.dengzhiguo.eread.R
+23:20:21.737 [ModalContext] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+23:20:21.740 [ModalContext] INFO  o.a.p.ModelValidator:42 - Validating elements
+23:20:21.741 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EActivityHandler: [cn.dengzhiguo.eread.activity.BookActivity, cn.dengzhiguo.eread.activity.MainActivity]
+23:20:21.741 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EBeanHandler: [cn.dengzhiguo.eread.activity.actions.PlayVoiceAction, cn.dengzhiguo.eread.net.DictNetHandler, cn.dengzhiguo.eread.adapter.BookListAdapter, cn.dengzhiguo.eread.activity.actions.SaveBookAction, cn.dengzhiguo.eread.activity.actions.ListBookAction, cn.dengzhiguo.eread.bo.FileUtil, cn.dengzhiguo.eread.activity.actions.InitAction, cn.dengzhiguo.eread.activity.actions.TranslateAction, cn.dengzhiguo.eread.bo.BookImpl]
+23:20:21.742 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EViewGroupHandler: [cn.dengzhiguo.eread.view.BookView]
+23:20:21.742 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ViewByIdHandler: [txtPham, imgPlayen, txtTitle, txtParts, txtPage, listBook, txtWord, txtPhen, layoutTrans, imgPlayam, ebook]
+23:20:21.744 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ClickHandler: [public void clickVoiceEn() , public void clickVoiceAm() , public void bookClick() ]
+23:20:21.745 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ItemClickHandler: [public void openBook(java.lang.Object) ]
+23:20:21.745 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RestHandler: [cn.dengzhiguo.eread.net.DictClient]
+23:20:21.747 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with GetHandler: [public abstract cn.dengzhiguo.eread.modal.TranslateInfo getTranslate(java.lang.String) ]
+23:20:21.747 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RestServiceHandler: [dictClient]
+23:20:21.747 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with OrmLiteDaoHandler: [bookDao]
+23:20:21.748 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RootContextHanlder: [context, context, context]
+23:20:21.749 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with BeanHandler: [book, bookBo, book, bookBo, fileUtil, dictHandler, bookListAdpater, fileUtil]
+23:20:21.749 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with AfterViewsHandler: [public void afterView() , public void init() ]
+23:20:21.750 [ModalContext] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+23:20:21.750 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EActivityHandler: [cn.dengzhiguo.eread.activity.BookActivity, cn.dengzhiguo.eread.activity.MainActivity]
+23:20:21.753 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EBeanHandler: [cn.dengzhiguo.eread.activity.actions.PlayVoiceAction, cn.dengzhiguo.eread.adapter.BookListAdapter, cn.dengzhiguo.eread.net.DictNetHandler, cn.dengzhiguo.eread.activity.actions.ListBookAction, cn.dengzhiguo.eread.activity.actions.SaveBookAction, cn.dengzhiguo.eread.bo.FileUtil, cn.dengzhiguo.eread.activity.actions.InitAction, cn.dengzhiguo.eread.activity.actions.TranslateAction, cn.dengzhiguo.eread.bo.BookImpl]
+23:20:21.754 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EViewGroupHandler: [cn.dengzhiguo.eread.view.BookView]
+23:20:21.754 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements RestHandler: [cn.dengzhiguo.eread.net.DictClient]
+23:20:21.755 [ModalContext] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+23:20:21.757 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 13
+23:20:21.757 [ModalContext] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+23:20:21.758 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.InitAction_
+23:20:21.761 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.ListBookAction_
+23:20:21.762 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.PlayVoiceAction_
+23:20:21.763 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.SaveBookAction_
+23:20:21.765 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.TranslateAction_
+23:20:21.766 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.view.BookView_
+23:20:21.768 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.bo.BookImpl_
+23:20:21.770 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.bo.FileUtil_
+23:20:21.771 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.net.DictClient_
+23:20:21.773 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.net.DictNetHandler_
+23:20:21.774 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.adapter.BookListAdapter_
+23:20:21.775 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.BookActivity_
+23:20:21.778 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.MainActivity_
+23:20:21.780 [ModalContext] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 66 ms], [Generate Sources = 23 ms], [Extract Annotations = 20 ms], [Validate Annotations = 10 ms], [Process Annotations = 7 ms], [Find R Classes = 4 ms], [Extract Manifest = 2 ms], 
+23:20:21.781 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+23:20:22.89 [Worker-42] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:20:23.874 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:20:23.886 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 13 annotations on 30 elements
+23:20:23.898 [ModalContext] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder /Users/zhiguodeng/git/eread/ERead: /Users/zhiguodeng/git/eread/ERead/AndroidManifest.xml
+23:20:23.900 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=cn.dengzhiguo.eread, componentQualifiedNames=[cn.dengzhiguo.eread.activity.BookActivity_, cn.dengzhiguo.eread.activity.MainActivity_, com.umeng.update.UpdateDialogActivity, com.umeng.update.net.DownloadingService], permissionQualifiedNames=[android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.READ_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.INTERNET, android.permission.READ_LOGS, android.permission.CALL_PHONE], applicationClassName=cn.dengzhiguo.eread.MainApp, libraryProject=false, debugabble=false, minSdkVersion=12, maxSdkVersion=-1, targetSdkVersion=21]
+23:20:23.900 [ModalContext] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: cn.dengzhiguo.eread.R
+23:20:23.901 [ModalContext] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+23:20:23.904 [ModalContext] INFO  o.a.p.ModelValidator:42 - Validating elements
+23:20:23.905 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EActivityHandler: [cn.dengzhiguo.eread.activity.BookActivity, cn.dengzhiguo.eread.activity.MainActivity]
+23:20:23.905 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EBeanHandler: [cn.dengzhiguo.eread.activity.actions.PlayVoiceAction, cn.dengzhiguo.eread.net.DictNetHandler, cn.dengzhiguo.eread.adapter.BookListAdapter, cn.dengzhiguo.eread.activity.actions.SaveBookAction, cn.dengzhiguo.eread.activity.actions.ListBookAction, cn.dengzhiguo.eread.bo.FileUtil, cn.dengzhiguo.eread.activity.actions.InitAction, cn.dengzhiguo.eread.activity.actions.TranslateAction, cn.dengzhiguo.eread.bo.BookImpl]
+23:20:23.906 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with EViewGroupHandler: [cn.dengzhiguo.eread.view.BookView]
+23:20:23.907 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ViewByIdHandler: [txtWord, txtPham, layoutTrans, txtPage, listBook, txtParts, imgPlayen, txtTitle, txtPhen, ebook, imgPlayam]
+23:20:23.909 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ClickHandler: [public void clickVoiceAm() , public void bookClick() , public void clickVoiceEn() ]
+23:20:23.910 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with ItemClickHandler: [public void openBook(java.lang.Object) ]
+23:20:23.911 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RestHandler: [cn.dengzhiguo.eread.net.DictClient]
+23:20:23.912 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with GetHandler: [public abstract cn.dengzhiguo.eread.modal.TranslateInfo getTranslate(java.lang.String) ]
+23:20:23.912 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RestServiceHandler: [dictClient]
+23:20:23.913 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with OrmLiteDaoHandler: [bookDao]
+23:20:23.914 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with RootContextHanlder: [context, context, context]
+23:20:23.914 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with BeanHandler: [bookBo, bookListAdpater, dictHandler, fileUtil, book, fileUtil, book, bookBo]
+23:20:23.915 [ModalContext] DEBUG o.a.p.ModelValidator:62 - Validating with AfterViewsHandler: [public void init() , public void afterView() ]
+23:20:23.915 [ModalContext] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+23:20:23.916 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EActivityHandler: [cn.dengzhiguo.eread.activity.BookActivity, cn.dengzhiguo.eread.activity.MainActivity]
+23:20:23.918 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EBeanHandler: [cn.dengzhiguo.eread.activity.actions.PlayVoiceAction, cn.dengzhiguo.eread.adapter.BookListAdapter, cn.dengzhiguo.eread.net.DictNetHandler, cn.dengzhiguo.eread.activity.actions.ListBookAction, cn.dengzhiguo.eread.activity.actions.SaveBookAction, cn.dengzhiguo.eread.bo.FileUtil, cn.dengzhiguo.eread.activity.actions.InitAction, cn.dengzhiguo.eread.activity.actions.TranslateAction, cn.dengzhiguo.eread.bo.BookImpl]
+23:20:23.919 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EViewGroupHandler: [cn.dengzhiguo.eread.view.BookView]
+23:20:23.920 [ModalContext] DEBUG o.a.p.ModelProcessor:80 - Processing root elements RestHandler: [cn.dengzhiguo.eread.net.DictClient]
+23:20:23.921 [ModalContext] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+23:20:23.923 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 13
+23:20:23.923 [ModalContext] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+23:20:23.923 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.InitAction_
+23:20:23.926 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.ListBookAction_
+23:20:23.927 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.PlayVoiceAction_
+23:20:23.928 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.SaveBookAction_
+23:20:23.930 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.actions.TranslateAction_
+23:20:23.931 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.view.BookView_
+23:20:23.933 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.bo.BookImpl_
+23:20:23.934 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.bo.FileUtil_
+23:20:23.935 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.net.DictClient_
+23:20:23.937 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.net.DictNetHandler_
+23:20:23.938 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.adapter.BookListAdapter_
+23:20:23.939 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.BookActivity_
+23:20:23.942 [ModalContext] DEBUG o.a.g.SourceCodewriter:55 - Generating class: cn.dengzhiguo.eread.activity.MainActivity_
+23:20:23.944 [ModalContext] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 58 ms], [Generate Sources = 21 ms], [Extract Annotations = 11 ms], [Validate Annotations = 11 ms], [Process Annotations = 8 ms], [Find R Classes = 4 ms], [Extract Manifest = 2 ms], 
+23:20:23.944 [ModalContext] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+23:20:24.259 [Worker-44] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+23:25:00.116 [Worker-45] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}

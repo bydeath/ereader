@@ -42,8 +42,8 @@ public final class BookActivity_
 
     private void init_(Bundle savedInstanceState) {
         OnViewChangedNotifier.registerOnViewChangedListener(this);
-        fileUtil = FileUtil_.getInstance_(this);
         bookBo = BookImpl_.getInstance_(this);
+        fileUtil = FileUtil_.getInstance_(this);
     }
 
     @Override
@@ -78,29 +78,14 @@ public final class BookActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        imgPlayam = ((ImageView) hasViews.findViewById(id.imgVoiceAm));
-        txtPham = ((TextView) hasViews.findViewById(id.txtPham));
-        ebook = ((EBook) hasViews.findViewById(id.ebook));
         layoutTrans = ((RelativeLayout) hasViews.findViewById(id.layoutTranslate));
-        txtPhen = ((TextView) hasViews.findViewById(id.txtPhen));
-        txtParts = ((TextView) hasViews.findViewById(id.txtParts));
+        txtPham = ((TextView) hasViews.findViewById(id.txtPham));
         txtWord = ((TextView) hasViews.findViewById(id.txtWord));
+        txtParts = ((TextView) hasViews.findViewById(id.txtParts));
         imgPlayen = ((ImageView) hasViews.findViewById(id.imgVoiceEn));
-        {
-            View view = hasViews.findViewById(id.imgVoiceEn);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        BookActivity_.this.clickVoiceEn();
-                    }
-
-                }
-                );
-            }
-        }
+        txtPhen = ((TextView) hasViews.findViewById(id.txtPhen));
+        imgPlayam = ((ImageView) hasViews.findViewById(id.imgVoiceAm));
+        ebook = ((EBook) hasViews.findViewById(id.ebook));
         {
             View view = hasViews.findViewById(id.imgVoiceAm);
             if (view!= null) {
@@ -125,6 +110,21 @@ public final class BookActivity_
                     @Override
                     public void onClick(View view) {
                         BookActivity_.this.bookClick();
+                    }
+
+                }
+                );
+            }
+        }
+        {
+            View view = hasViews.findViewById(id.imgVoiceEn);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        BookActivity_.this.clickVoiceEn();
                     }
 
                 }

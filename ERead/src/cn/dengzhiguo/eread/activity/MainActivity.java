@@ -20,6 +20,7 @@ import cn.dengzhiguo.eread.activity.actions.ListBookAction_;
 import cn.dengzhiguo.eread.adapter.BookListAdapter;
 import cn.dengzhiguo.eread.db.Book;
 
+import com.umeng.analytics.MobclickAgent;
 import com.umeng.update.UmengUpdateAgent;
 @EActivity(R.layout.activity_main)
 public class MainActivity extends Activity {
@@ -36,6 +37,7 @@ public class MainActivity extends Activity {
 		UmengUpdateAgent.update(this);
 		mvc=new MVCAdapter(this);
 		mvc.register(this);
+		
 	}
 	@AfterViews
 	public void init(){
@@ -61,7 +63,12 @@ public class MainActivity extends Activity {
 	protected void onResume() {
 		
 		super.onResume();
+		MobclickAgent.onResume(this);
 		mvc.invokeAction(ListBookAction_.class, null, new Intent(), null, false,0);
+	}
+	public void onPause() {
+		super.onPause();
+		MobclickAgent.onPause(this);
 	}
 	
 }

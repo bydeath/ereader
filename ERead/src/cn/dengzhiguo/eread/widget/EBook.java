@@ -222,7 +222,7 @@ public class EBook extends View {
 	}
 
 	private void paintText(Canvas canvas) {
-		if (pages == null || pages.size() == 0)
+		if (pages == null || pages.size() == 0 ||curPage<0)
 			return;
 		paintText(canvas, mMove + paddingLeft, pages.get(curPage));
 		if (mMove < 0) {
