@@ -3,46 +3,84 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-	<FrameLayout android:layout_width="match_parent"
-	    android:layout_height="match_parent">
-	    <cn.dengzhiguo.eread.widget.EBook 
-	        android:layout_width="match_parent"
-	        android:layout_height="match_parent"
-	        android:id="@+id/ebook"/>
-	    <RelativeLayout android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:id="@+id/layoutTranslate"
-	        android:background="#ffffffff"
-	        android:padding="5dp"
-	        android:visibility="gone">
-	        <LinearLayout android:layout_width="match_parent"
-	            android:layout_height="wrap_content"
-	            android:orientation="horizontal"
-	            android:id="@+id/layoutTitle">
-	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-	                android:id="@+id/txtWord"
-	                android:textColor="#ff000000"/>
-	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-	                android:id="@+id/txtPhen"
-	                android:textColor="#ff000000"
-	                android:paddingLeft="5dp"/>
-	            <ImageView android:layout_width="20dp"
-	                android:layout_height="20dp"
-	                android:src="@drawable/speaker"
-	                android:id="@+id/imgVoiceEn"/>
-	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-	                android:id="@+id/txtPham"
-	                android:textColor="#ff000000"
-	                android:paddingLeft="5dp"/>
-	             <ImageView android:layout_width="20dp"
-	                android:layout_height="20dp"
-	                android:src="@drawable/speaker"
-	                android:id="@+id/imgVoiceAm"/>
-	        </LinearLayout>
-	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-	                android:id="@+id/txtParts"
-	                android:layout_below="@id/layoutTitle"
-	                android:textColor="#ff000000"/>
-	    </RelativeLayout>
-	</FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <cn.dengzhiguo.eread.widget.EBook
+            android:id="@+id/ebook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTranslate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ffffff"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/layoutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff0f0f0"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff000000" />
+
+                <ProgressBar
+                    android:id="@+id/pgbWaiting"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtPhen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="#ff000000" />
+
+                <ImageView
+                    android:id="@+id/imgVoiceEn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/speaker" />
+
+                <TextView
+                    android:id="@+id/txtPham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="#ff000000" />
+
+                <ImageView
+                    android:id="@+id/imgVoiceAm"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/speaker" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtParts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutTitle"
+                android:background="#fff0f0f0"
+                android:textColor="#ff000000" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <SeekBar
+        android:id="@+id/skbPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

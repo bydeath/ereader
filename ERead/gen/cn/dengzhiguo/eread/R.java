@@ -40,40 +40,45 @@ public final class R {
         public static final int umeng_update_wifi_disable=0x7f02001a;
     }
     public static final class id {
+        public static final int btnShare=0x7f05000c;
+        public static final int btnSupport=0x7f05000d;
         public static final int ebook=0x7f050000;
-        public static final int imgVoiceAm=0x7f050007;
-        public static final int imgVoiceEn=0x7f050005;
+        public static final int imgVoiceAm=0x7f050008;
+        public static final int imgVoiceEn=0x7f050006;
         public static final int layoutTitle=0x7f050002;
         public static final int layoutTranslate=0x7f050001;
-        public static final int listBook=0x7f050009;
-        public static final int txtPage=0x7f05001a;
-        public static final int txtParts=0x7f050008;
-        public static final int txtPham=0x7f050006;
-        public static final int txtPhen=0x7f050004;
-        public static final int txtTitle=0x7f050019;
+        public static final int listBook=0x7f05000b;
+        public static final int pgbWaiting=0x7f050004;
+        public static final int skbPage=0x7f05000a;
+        public static final int txtPage=0x7f05001e;
+        public static final int txtParts=0x7f050009;
+        public static final int txtPham=0x7f050007;
+        public static final int txtPhen=0x7f050005;
+        public static final int txtTitle=0x7f05001d;
         public static final int txtWord=0x7f050003;
-        public static final int umeng_common_icon_view=0x7f05000a;
-        public static final int umeng_common_notification=0x7f05000e;
-        public static final int umeng_common_notification_controller=0x7f05000b;
-        public static final int umeng_common_progress_bar=0x7f050011;
-        public static final int umeng_common_progress_text=0x7f050010;
-        public static final int umeng_common_rich_notification_cancel=0x7f05000d;
-        public static final int umeng_common_rich_notification_continue=0x7f05000c;
-        public static final int umeng_common_title=0x7f05000f;
-        public static final int umeng_update_content=0x7f050014;
-        public static final int umeng_update_id_cancel=0x7f050017;
-        public static final int umeng_update_id_check=0x7f050015;
-        public static final int umeng_update_id_close=0x7f050013;
-        public static final int umeng_update_id_ignore=0x7f050018;
-        public static final int umeng_update_id_ok=0x7f050016;
-        public static final int umeng_update_wifi_indicator=0x7f050012;
+        public static final int umeng_common_icon_view=0x7f05000e;
+        public static final int umeng_common_notification=0x7f050012;
+        public static final int umeng_common_notification_controller=0x7f05000f;
+        public static final int umeng_common_progress_bar=0x7f050015;
+        public static final int umeng_common_progress_text=0x7f050014;
+        public static final int umeng_common_rich_notification_cancel=0x7f050011;
+        public static final int umeng_common_rich_notification_continue=0x7f050010;
+        public static final int umeng_common_title=0x7f050013;
+        public static final int umeng_update_content=0x7f050018;
+        public static final int umeng_update_id_cancel=0x7f05001b;
+        public static final int umeng_update_id_check=0x7f050019;
+        public static final int umeng_update_id_close=0x7f050017;
+        public static final int umeng_update_id_ignore=0x7f05001c;
+        public static final int umeng_update_id_ok=0x7f05001a;
+        public static final int umeng_update_wifi_indicator=0x7f050016;
     }
     public static final class layout {
         public static final int activity_book=0x7f030000;
         public static final int activity_main=0x7f030001;
-        public static final int umeng_common_download_notification=0x7f030002;
-        public static final int umeng_update_dialog=0x7f030003;
-        public static final int view_book=0x7f030004;
+        public static final int activity_newword=0x7f030002;
+        public static final int umeng_common_download_notification=0x7f030003;
+        public static final int umeng_update_dialog=0x7f030004;
+        public static final int view_book=0x7f030005;
     }
     public static final class string {
         public static final int UMAppUpdate=0x7f040018;

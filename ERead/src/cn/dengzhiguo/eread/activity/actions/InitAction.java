@@ -16,9 +16,11 @@ public class InitAction implements Action {
 	@Bean(BookImpl.class)
 	IBook book;
 	@Override
-	public Intent execute(Context arg0, Intent arg1, ActionCallback arg2) {
+	public Intent execute(Context arg0, Intent intent, ActionCallback arg2) {
 		try {
-			book.initBooks();
+			if(book.initBooks()){
+				return intent;
+			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

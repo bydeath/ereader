@@ -13,7 +13,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import cn.dengzhiguo.eread.R.id;
 import cn.dengzhiguo.eread.R.layout;
@@ -42,8 +44,8 @@ public final class BookActivity_
 
     private void init_(Bundle savedInstanceState) {
         OnViewChangedNotifier.registerOnViewChangedListener(this);
-        bookBo = BookImpl_.getInstance_(this);
         fileUtil = FileUtil_.getInstance_(this);
+        bookBo = BookImpl_.getInstance_(this);
     }
 
     @Override
@@ -78,29 +80,16 @@ public final class BookActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
+        skbPage = ((SeekBar) hasViews.findViewById(id.skbPage));
+        pgbWaiting = ((ProgressBar) hasViews.findViewById(id.pgbWaiting));
         layoutTrans = ((RelativeLayout) hasViews.findViewById(id.layoutTranslate));
-        txtPham = ((TextView) hasViews.findViewById(id.txtPham));
-        txtWord = ((TextView) hasViews.findViewById(id.txtWord));
-        txtParts = ((TextView) hasViews.findViewById(id.txtParts));
         imgPlayen = ((ImageView) hasViews.findViewById(id.imgVoiceEn));
-        txtPhen = ((TextView) hasViews.findViewById(id.txtPhen));
+        txtWord = ((TextView) hasViews.findViewById(id.txtWord));
         imgPlayam = ((ImageView) hasViews.findViewById(id.imgVoiceAm));
+        txtParts = ((TextView) hasViews.findViewById(id.txtParts));
         ebook = ((EBook) hasViews.findViewById(id.ebook));
-        {
-            View view = hasViews.findViewById(id.imgVoiceAm);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        BookActivity_.this.clickVoiceAm();
-                    }
-
-                }
-                );
-            }
-        }
+        txtPham = ((TextView) hasViews.findViewById(id.txtPham));
+        txtPhen = ((TextView) hasViews.findViewById(id.txtPhen));
         {
             View view = hasViews.findViewById(id.layoutTranslate);
             if (view!= null) {
@@ -125,6 +114,21 @@ public final class BookActivity_
                     @Override
                     public void onClick(View view) {
                         BookActivity_.this.clickVoiceEn();
+                    }
+
+                }
+                );
+            }
+        }
+        {
+            View view = hasViews.findViewById(id.imgVoiceAm);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        BookActivity_.this.clickVoiceAm();
                     }
 
                 }

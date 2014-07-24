@@ -6,6 +6,7 @@
 package cn.dengzhiguo.eread.activity.actions;
 
 import android.content.Context;
+import cn.dengzhiguo.eread.bo.NewwordImpl_;
 import cn.dengzhiguo.eread.net.DictNetHandler_;
 
 public final class TranslateAction_
@@ -24,6 +25,7 @@ public final class TranslateAction_
     }
 
     private void init_() {
+        newwordBo = NewwordImpl_.getInstance_(context_);
         dictHandler = DictNetHandler_.getInstance_(context_);
     }
 

@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -74,6 +75,36 @@ public final class MainActivity_
     @Override
     public void onViewChanged(HasViews hasViews) {
         listBook = ((ListView) hasViews.findViewById(cn.dengzhiguo.eread.R.id.listBook));
+        {
+            View view = hasViews.findViewById(cn.dengzhiguo.eread.R.id.btnSupport);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        MainActivity_.this.doSupport();
+                    }
+
+                }
+                );
+            }
+        }
+        {
+            View view = hasViews.findViewById(cn.dengzhiguo.eread.R.id.btnShare);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        MainActivity_.this.share();
+                    }
+
+                }
+                );
+            }
+        }
         {
             AdapterView<?> view = ((AdapterView<?> ) hasViews.findViewById(cn.dengzhiguo.eread.R.id.listBook));
             if (view!= null) {

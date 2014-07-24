@@ -10,7 +10,7 @@ import com.j256.ormlite.table.DatabaseTable;
 
 @DatabaseTable(tableName="t_bookstore")
 public class Book implements  Serializable{
-	@DatabaseField(id=true)
+	@DatabaseField(allowGeneratedIdInsert =true,generatedId=true)
 	private int id;
 	@DatabaseField
 	private String file;

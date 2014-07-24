@@ -66,8 +66,8 @@ public final class BookView_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        txtPage = ((TextView) hasViews.findViewById(id.txtPage));
         txtTitle = ((TextView) hasViews.findViewById(id.txtTitle));
+        txtPage = ((TextView) hasViews.findViewById(id.txtPage));
     }
 
 }

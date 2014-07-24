@@ -24,12 +24,18 @@ public class BookImpl implements IBook {
 	@OrmLiteDao(helper = DataHelper.class, model = Book.class)
 	RuntimeExceptionDao<Book, Integer> bookDao;
 	@Override
-	public void initBooks() throws Exception{
+	public boolean initBooks() throws Exception{
 		String[] books=context.getAssets().list("books");
+		boolean changed=false;
 		for(String book:books)
-			copyAsset(book);
+		{
+			if(copyAsset(book)){
+				changed=true;
+			}
+		}
+		return changed;
 	}
-	private void copyAsset(String filename)throws Exception{
+	private boolean copyAsset(String filename)throws Exception{
 		InputStream input=context.getAssets().open("books/"+filename);
 		byte[] data=new byte[input.available()];
 		input.read(data);
@@ -41,7 +47,7 @@ public class BookImpl implements IBook {
 				break;
 			bookName.append(c);
 		}
-		this.addBook(file, bookName.toString());
+		return this.addBook(file, bookName.toString());
 	}
 	
 	@Override
@@ -51,7 +57,7 @@ public class BookImpl implements IBook {
 	}
 
 	@Override
-	public void addBook(File file,String name) {
+	public boolean addBook(File file,String name) {
 		if(bookDao.queryForEq("name", name.replaceAll("'", "''")).size()==0){
 			Book book=new Book();
 			try {
@@ -65,6 +71,10 @@ public class BookImpl implements IBook {
 			book.setName(name);
 			book.setPage(0);
 			bookDao.create(book);
+			return true;
+		}else
+		{
+			return false;
 		}
 	}
 	@Override
